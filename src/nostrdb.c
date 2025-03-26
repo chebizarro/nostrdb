@@ -118,12 +118,6 @@ struct ndb_profile_record_builder {
 	void *flatbuf;
 };
 
-// controls whether to continue or stop the json parser
-enum ndb_idres {
-	NDB_IDRES_CONT,
-	NDB_IDRES_STOP,
-};
-
 // closure data for the id-detecting ingest controller
 struct ndb_ingest_controller
 {

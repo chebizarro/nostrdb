@@ -434,7 +434,7 @@ static inline void cursor_print_around(struct cursor *cur, int range)
 {
 	unsigned char *c;
 
-	printf("[%ld/%ld]\n", cur->p - cur->start, cur->end - cur->start);
+	printf("[%td/%td]\n", cur->p - cur->start, cur->end - cur->start);
 
 	c = max(cur->p - range, cur->start);
 	for (; c < cur->end && c < (cur->p + range); c++) {

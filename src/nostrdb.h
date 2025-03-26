@@ -70,6 +70,12 @@ struct ndb_keypair {
 	unsigned char pair[96];
 };
 
+// controls whether to continue or stop the json parser
+enum ndb_idres {
+	NDB_IDRES_CONT,
+	NDB_IDRES_STOP,
+};
+
 // function pointer for controlling what to do after we parse an id
 typedef enum ndb_idres (*ndb_id_fn)(void *, const char *);
 
